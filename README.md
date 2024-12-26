@@ -108,7 +108,7 @@
 
 ### 5. Программа
 
-```
+```java
 import java.util.Scanner;
 import java.io.PrintStream;
 import static java.lang.System.out;
@@ -385,6 +385,7 @@ class Election { // определяем основной класс Election
 1. Тест на проверку добавления одного, нескольких голосов и счетчика всех голосов:
 
    - **Input**:
+    ```
 
       election.addCandidate("Кандидат 1");
 
@@ -394,7 +395,7 @@ class Election { // определяем основной класс Election
 
       out.println("Общее количество голосов: " + election.getTotalVotes());
 
-     ````
+     ```
 
    - **Output**:
 
@@ -405,13 +406,13 @@ class Election { // определяем основной класс Election
 2. Поиск индекса по имени:
 
    - **Input**:
-
+      ```
      out.println("Индекс кандидата: " + election.findCandidateIndex("Кандидат 1"));
 
      ```
 
    - **Output**:
-
+      ```
      Индекс кандидата: 0
 
      ```
@@ -419,13 +420,13 @@ class Election { // определяем основной класс Election
 3. Тест на определение победителя :
 
    - **Input**:
-
+      ```
      out.println("Победитель: " + election.getWinner());
 
      ```
 
    - **Output**:
-
+      ```
      Победитель: Кандидат 2
 
      ```
@@ -433,13 +434,13 @@ class Election { // определяем основной класс Election
 4. Тест на удаление кандидатов, не набравших нужное количество голосов:
 
    - **Input**:
-
+      ```
      election.removeLowScorers(50.0);
 
      ```
 
    - **Output**:
-
+      ```
      Кандидат 2: 5 голосов
 
      ```
@@ -447,13 +448,13 @@ class Election { // определяем основной класс Election
 5. Тест на вывод кандидатов с их количеством голосов в процентах:
 
    - **Input**:
-
+      ```
      election.displayVotePercentages();
 
      ```
 
    - **Output**:
-
+   ```
      Кандидат 1 16,67%
      Кандидат 2 83,33%
      ````
@@ -461,14 +462,14 @@ class Election { // определяем основной класс Election
 6. Тест на добавление каждому кандидату из массива по 1 голосу:
 
    - **Input**:
-
+      ```
      String[] votesArray = {"Кандидат 1", "Кандидат 2", "Кандидат 1"};
      election.countVotesFromArray(votesArray);
 
      ````
 
    - **Output**:
-
+   ```
    Кандидат 1: 3 голосов
    Кандидат 2: 6 голосов
    ````
