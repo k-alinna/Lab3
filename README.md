@@ -386,13 +386,13 @@ class Election { // определяем основной класс Election
 
    - **Input**:
 
-     ````election.addCandidate("Кандидат 1");
+      election.addCandidate("Кандидат 1");
 
-     ``` election.addCandidate("Кандидат 2", 5);
+      election.addCandidate("Кандидат 2", 5);
 
-     ```election.addVote("Кандидат 1");
+      election.addVote("Кандидат 1");
 
-     ```out.println("Общее количество голосов: " + election.getTotalVotes());
+      out.println("Общее количество голосов: " + election.getTotalVotes());
 
      ````
 
@@ -406,13 +406,13 @@ class Election { // определяем основной класс Election
 
    - **Input**:
 
-     ```out.println("Индекс кандидата: " + election.findCandidateIndex("Кандидат 1"));
+     out.println("Индекс кандидата: " + election.findCandidateIndex("Кандидат 1"));
 
      ```
 
    - **Output**:
 
-     ```Индекс кандидата: 0
+     Индекс кандидата: 0
 
      ```
 
@@ -420,13 +420,13 @@ class Election { // определяем основной класс Election
 
    - **Input**:
 
-     ```out.println("Победитель: " + election.getWinner());
+     out.println("Победитель: " + election.getWinner());
 
      ```
 
    - **Output**:
 
-     ```Победитель: Кандидат 2
+     Победитель: Кандидат 2
 
      ```
 
@@ -434,13 +434,13 @@ class Election { // определяем основной класс Election
 
    - **Input**:
 
-     ```election.removeLowScorers(50.0);
+     election.removeLowScorers(50.0);
 
      ```
 
    - **Output**:
 
-     ```Кандидат 2: 5 голосов
+     Кандидат 2: 5 голосов
 
      ```
 
@@ -448,27 +448,27 @@ class Election { // определяем основной класс Election
 
    - **Input**:
 
-     ```election.displayVotePercentages();
+     election.displayVotePercentages();
 
      ```
 
    - **Output**:
 
-     ````Кандидат 1 16,67%
-     ``` Кандидат 2 83,33%
+     Кандидат 1 16,67%
+     Кандидат 2 83,33%
      ````
 
 6. Тест на добавление каждому кандидату из массива по 1 голосу:
 
    - **Input**:
 
-     ````String[] votesArray = {"Кандидат 1", "Кандидат 2", "Кандидат 1"};
-     ``` election.countVotesFromArray(votesArray);
+     String[] votesArray = {"Кандидат 1", "Кандидат 2", "Кандидат 1"};
+     election.countVotesFromArray(votesArray);
 
      ````
 
    - **Output**:
 
-   ````Кандидат 1: 3 голосов
-   ``` Кандидат 2: 6 голосов
+   Кандидат 1: 3 голосов
+   Кандидат 2: 6 голосов
    ````
